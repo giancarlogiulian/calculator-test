@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.616379537"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{C9965B72-F5E6-4B92-B0BD-1A9DE6968C70}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_47_35_192\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.6188253704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{3A925FDE-CACC-49A1-AEE7-9DCE8D878813}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_51_06_512\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.6190203241"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BF9360E3-27F4-4C0D-A796-81C95857F665}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_51_23_356\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.6197977083"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{A1611A2D-E7D4-430E-89E4-090387526091}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_52_30_522\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.620275706"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{03931E83-CBF2-4413-BFCB-634222ECC550}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_53_11_821\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.6209693634"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{3DDDDFF6-1A22-4370-B0F3-8B2731A32DC1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_14_54_11_753\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44168.6434498611"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BC5D3F30-FAB1-4B62-8AB6-500E498F5173}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [uCalcular\teste]"/>
+				<Prp name="relpath" type="S" value="03_12_2020_15_26_34_68\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

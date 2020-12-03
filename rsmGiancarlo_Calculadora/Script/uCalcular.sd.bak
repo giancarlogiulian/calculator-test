@@ -1,0 +1,93 @@
+﻿procedure rsmGiancarlo_IniciarCalculadora;forward;
+procedure somar;forward;
+procedure subtrair;forward;
+procedure multiplicar;forward;
+procedure dividir;forward;
+
+procedure teste;
+begin
+  rsmGiancarlo_IniciarCalculadora;
+end;
+
+procedure rsmGiancarlo_IniciarCalculadora;
+begin
+  Log.AppendFolder('Iniciar calculadora');
+  if Sys.WaitProcess('prjCalculadora').Exists then begin
+    Log.Warning('Calculadora já esta rodando');   
+  end else begin 
+    Log.Message('Processo da Calculadora foi executado.');   
+    TestedApps.prjCalculadora.Run(TRUE);    
+    while not Sys.WaitProcess('prjCalculadora').Exists do begin
+      Delay(500);
+    end;
+    somar(); 
+    subtrair(); 
+    multiplicar(); 
+    dividir();        
+  end;  
+  Log.PopLogFolder;
+end;
+
+procedure somar();
+var Resultado: String;
+begin
+  Aliases.prjCalculadora.wndCalculadora.Edit.wText := '3';
+  Aliases.prjCalculadora.wndCalculadora.Edit2.wText := '4';
+  Aliases.prjCalculadora.wndCalculadora.LCLComboBox.Edit.wText := 'Somar';
+  Aliases.prjCalculadora.wndCalculadora.btnCalcular.Click();  
+  
+  Resultado := Aliases.prjCalculadora.wndCalculadora.Window('Edit', '', 1).wText;
+  if (Resultado <> '7') then begin
+    Log.Error('Resultado da soma retornou: ' + Resultado);                           
+  end else begin
+    Log.Message('Resultado da soma encontrada com sucesso');           
+  end;
+end;
+
+procedure subtrair();
+var Resultado: String;
+begin
+  Aliases.prjCalculadora.wndCalculadora.Edit.wText := '3';
+  Aliases.prjCalculadora.wndCalculadora.Edit2.wText := '4';
+  Aliases.prjCalculadora.wndCalculadora.LCLComboBox.Edit.wText := 'Somar';
+  Aliases.prjCalculadora.wndCalculadora.btnCalcular.Click();  
+  
+  Resultado := Aliases.prjCalculadora.wndCalculadora.Window('Edit', '', 1).wText;
+  if (Resultado <> '-1') then begin
+    Log.Error('Resultado da subtração retornou: ' + Resultado);                           
+  end else begin
+    Log.Message('Resultado da subtração encontrada com sucesso');           
+  end;
+end;
+
+procedure multiplicar();
+var Resultado: String;
+begin
+  Aliases.prjCalculadora.wndCalculadora.Edit.wText := '3';
+  Aliases.prjCalculadora.wndCalculadora.Edit2.wText := '4';
+  Aliases.prjCalculadora.wndCalculadora.LCLComboBox.Edit.wText := 'Somar';
+  Aliases.prjCalculadora.wndCalculadora.btnCalcular.Click();  
+  
+  Resultado := Aliases.prjCalculadora.wndCalculadora.Window('Edit', '', 1).wText;
+  if (Resultado <> '12') then begin
+    Log.Error('Resultado da multiplicação retornou: ' + Resultado);                           
+  end else begin
+    Log.Message('Resultado da multiplicação encontrada com sucesso');           
+  end;
+end;
+
+procedure dividir();
+var Resultado: String;
+begin
+  Aliases.prjCalculadora.wndCalculadora.Edit.wText := '12';
+  Aliases.prjCalculadora.wndCalculadora.Edit2.wText := '3';
+  Aliases.prjCalculadora.wndCalculadora.LCLComboBox.Edit.wText := 'Somar';
+  Aliases.prjCalculadora.wndCalculadora.btnCalcular.Click();  
+  
+  Resultado := Aliases.prjCalculadora.wndCalculadora.Window('Edit', '', 1).wText;
+  if (Resultado <> '4') then begin
+    Log.Error('Resultado da divisão retornou: ' + Resultado);                           
+  end else begin
+    Log.Message('Resultado da divisao encontrada com sucesso');           
+  end;
+end;

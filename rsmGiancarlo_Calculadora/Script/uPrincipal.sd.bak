@@ -1,0 +1,10 @@
+﻿procedure rsmGiancarlo_IniciarCalculadora;
+begin
+  if Sys.WaitProcess('prjCalculadora').Exists then begin
+    Log.Warning('Calculadora já esta rodando');
+  end else begin
+    TestedApps.prjCalculadora.Run(TRUE);
+    
+                  
+  end;
+end;

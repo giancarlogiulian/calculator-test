@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{C7D6D4D9-8915-4F0C-B016-459B5216E413}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="prjCalculadora" Key="{802ACEB8-1AF4-4333-8E21-3876A523545F}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="prjCalculadora" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndCalculadora" Key="{1F9760CE-D151-4FAA-8CE0-CD286433237C}">
+								<Image FileName="-1342859942" Left="0" Top="0" Right="336" Bottom="279" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Window" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Calculadora" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Edit" Key="{F35FA667-E6A9-4554-9491-E53A61CD542D}">
+										<Image FileName="-1342859942" Left="24" Top="55" Right="104" Bottom="78" />
+										<TypeInfo Item0="{78A84344-5BDB-4DF6-88BB-11C22BEF38EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="3" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Edit2" Key="{697B6C84-6399-481A-8FC5-EFA2297F6B15}">
+										<Image FileName="-1588815657" Left="24" Top="103" Right="104" Bottom="126" />
+										<TypeInfo Item0="{78A84344-5BDB-4DF6-88BB-11C22BEF38EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="2" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="LCLComboBox" Key="{1DED7298-C378-4E91-B23E-717260E1B2EC}">
+										<Image FileName="-1847132876" Left="24" Top="151" Right="124" Bottom="174" />
+										<TypeInfo Item0="{86200610-3C49-4016-B322-47BA0ED563C6}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="LCLComboBox" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Edit" Key="{1091D1E8-3B10-40B9-AE7A-5CCC28948AF8}">
+												<Image FileName="1772371014" Left="27" Top="154" Right="104" Bottom="171" />
+												<TypeInfo Item0="{78A84344-5BDB-4DF6-88BB-11C22BEF38EC}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="Edit" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="btnCalcular" Key="{9D02F3D7-2CEE-4E6D-A582-52AE999BB0FE}">
+										<Image FileName="-1582999473" Left="112" Top="53" Right="187" Bottom="78" />
+										<TypeInfo Item0="{8C65C045-9649-4CCF-8156-146B6C9B2140}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Calcular" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="prjCalculadora" Owner="{802ACEB8-1AF4-4333-8E21-3876A523545F}">
+			<Child Name="wndCalculadora" Owner="{1F9760CE-D151-4FAA-8CE0-CD286433237C}">
+				<Child Name="Edit" Owner="{F35FA667-E6A9-4554-9491-E53A61CD542D}" />
+				<Child Name="Edit2" Owner="{697B6C84-6399-481A-8FC5-EFA2297F6B15}" />
+				<Child Name="LCLComboBox" Owner="{1DED7298-C378-4E91-B23E-717260E1B2EC}">
+					<Child Name="Edit" Owner="{1091D1E8-3B10-40B9-AE7A-5CCC28948AF8}" />
+				</Child>
+				<Child Name="btnCalcular" Owner="{9D02F3D7-2CEE-4E6D-A582-52AE999BB0FE}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

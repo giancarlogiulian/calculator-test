@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{01D048F5-B412-4B72-B298-B50F2F32724E}">
+	<children>
+		<child name="rsmGiancarlo_Calculadora" key="{C23B42A5-976B-4D5B-824A-0969F54E1958}" path="rsmGiancarlo_Calculadora\rsmGiancarlo_Calculadora.mds" />
+	</children>
+	<testItems key="{4B05B0FC-AE79-453E-8DEC-8486867E78D6}">
+		<children>
+			<testItem key="{C23B42A5-976B-4D5B-824A-0969F54E1958}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{6F1DCB4D-8924-46AD-80DE-04D312D7F7A8}" />
+	<analysis key="{22B76A17-C325-4421-B218-8D460D853CDF}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="False" />
+	</extender>
+</Root>
